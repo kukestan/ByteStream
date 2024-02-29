@@ -639,7 +639,7 @@ ByteStream &ByteStream::operator>>(const char string[])
 {
     unsigned int i = 0;
 
-    while(buffer[index - 1] != 0 && length > 0)
+    while(length > 0)
     {
         *this >> string[i];
         i++;
